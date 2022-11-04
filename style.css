@@ -1,1 +1,88 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section header {
+  background-color: #eee;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section header nav {
+  margin-right: 20px;
+}
+section header nav a {
+  text-decoration: none;
+  margin: 5px;
+  font-size: 18px;
+  transition: font-size 3s, color 2.3s ease;
+  color: #3498DB;
+  font-weight: 600;
+}
+section header nav a:hover {
+  color: black;
+  font-size: 20px;
+  border-bottom: #D35400 2px solid;
+}
+section main {
+  height: calc(100vh - 260px);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section main .main-right {
+  background-image: url("./assets/tour2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: bacground-image-transform, 5s ease-in-out;
+  width: 50%;
+}
+section main .main-right:hover {
+  background-image: url("./assets/tour3.jpg");
+}
+section main .main-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 30px;
+}
+section main .main-left p {
+  margin: 10px;
+  font-size: 20px;
+}
+section .subscribe {
+  height: 200px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+section .subscribe h4 {
+  margin: 20px;
+}
+section .subscribe form {
+  margin: 20px;
+}
+section .subscribe form input {
+  height: 40px;
+  width: 650px;
+  min-width: 400px;
+}
+section Button {
+  background-color: #3498DB;
+  border: none;
+  padding: 10px;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+}
+section Button:hover {
+  background-color: #fff;
+  border: solid 1px #D35400;
+}/*# sourceMappingURL=style.css.map */
